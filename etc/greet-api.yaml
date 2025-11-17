@@ -1,9 +1,12 @@
 Name: greet-api
 Host: 0.0.0.0
 Port: 8888
+# 打印详细日志
+# Verbose: true
 
 Log:
   Encoding: plain
+  # 日志模式
   # Mode: file
 
 # redis客户端配置
