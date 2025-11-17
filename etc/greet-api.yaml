@@ -19,3 +19,9 @@ DB:
 # redis数据库缓存配置
 Cache:
   - Host: 127.0.0.1:6379
+
+# prometheus配置
+Prometheus:
+  Host: 127.0.0.1
+  Port: 9100
+  Path: /metrics
