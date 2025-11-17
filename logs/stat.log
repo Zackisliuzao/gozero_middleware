@@ -1,0 +1,4 @@
+2025-11-17T11:22:42.247+08:00	[32;1m stat [0;22m	CPU: 0m, MEMORY: Alloc=0.3Mi, TotalAlloc=0.3Mi, Sys=8.0Mi, NumGC=0	caller=stat/usage.go:82
+2025-11-17T11:22:42.247+08:00	[32;1m stat [0;22m	(api) shedding_stat [1m], cpu: 0, total: 1, pass: 1, drop: 0	caller=load/sheddingstat.go:61
+2025-11-17T11:22:52.748+08:00	[32;1m stat [0;22m	(greet-api) - qps: 0.0/s, drops: 0, avg time: 0.0ms, med: 0.3ms, 90th: 0.3ms, 99th: 0.3ms, 99.9th: 0.3ms	caller=stat/metrics.go:210
+2025-11-17T11:22:59.544+08:00	[32;1m stat [0;22m	(greet-api) - qps: 0.0/s, drops: 0, avg time: 0.0ms, med: 0.0ms, 90th: 0.0ms, 99th: 0.0ms, 99.9th: 0.0ms	caller=stat/metrics.go:210

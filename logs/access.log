@@ -1,0 +1,9 @@
+2025-11-17T11:21:52.739+08:00	[34;1m info [0;22m	request ... 	caller=middleware/mid.go:12
+2025-11-17T11:21:52.739+08:00	[34;1m info [0;22m	greetMiddleware1 request ... 	caller=middleware/greetmiddleware1middleware.go:22
+2025-11-17T11:21:52.739+08:00	[34;1m info [0;22m	greetMiddleware2 request ... 	caller=middleware/greetmiddleware2middleware.go:22
+2025-11-17T11:21:52.739+08:00	[34;1m info [0;22m	name: you	caller=logic/greetlogic.go:35	trace=e16a2b3cbd1e1179675c278e753d900b	span=79b03df2a073ca00	duration=0.0ms
+2025-11-17T11:21:52.739+08:00	[34;1m info [0;22m	greetMiddleware2 reponse ... 	caller=middleware/greetmiddleware2middleware.go:25
+2025-11-17T11:21:52.739+08:00	[34;1m info [0;22m	greetMiddleware1 reponse ... 	caller=middleware/greetmiddleware1middleware.go:25
+2025-11-17T11:21:52.739+08:00	[34;1m info [0;22m	reponse ... 	caller=middleware/mid.go:14
+2025-11-17T11:21:52.739+08:00	[34;1m info [0;22m	[HTTP] [42;97;1m 200 [0;0;22m - [44;97;1m GET [0;0;22m /from/you - 127.0.0.1:57811 - curl/7.87.0	span=79b03df2a073ca00	duration=0.3ms	caller=handler/loghandler.go:167	trace=e16a2b3cbd1e1179675c278e753d900b
+2025-11-17T11:22:58.540+08:00	[34;1m info [0;22m	Got signal 2, shutting down...	caller=proc/shutdown.go:84
