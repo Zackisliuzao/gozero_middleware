@@ -13,10 +13,12 @@ import (
 )
 
 type ServiceContext struct {
-	Config           config.Config
+	Config config.Config
+	// 路由中间件
 	GreetMiddleware1 rest.Middleware
 	GreetMiddleware2 rest.Middleware
-	RedisClient      *redis.Redis
+	// redis客户端
+	RedisClient *redis.Redis
 }
 
 func NewServiceContext(c config.Config) *ServiceContext {

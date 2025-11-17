@@ -16,6 +16,7 @@ func NewGreetMiddleware2Middleware() *GreetMiddleware2Middleware {
 	return &GreetMiddleware2Middleware{}
 }
 
+// 中间件2
 func (m *GreetMiddleware2Middleware) Handle(next http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		// TODO generate middleware implement function, delete after code implementation
