@@ -33,5 +33,5 @@ func (l *GreetLogic) Greet(req *types.Request) (resp *types.Response, err error)
 	duration := timex.Since(startTime)
 
 	l.WithDuration(duration).Infof("name: %v", req.Name)
-	return &types.Response{}, nil
+	return &types.Response{Message: req.Name}, nil
 }
