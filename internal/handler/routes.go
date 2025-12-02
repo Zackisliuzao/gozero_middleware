@@ -14,7 +14,6 @@ import (
 func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 	server.AddRoutes(
 		rest.WithMiddlewares(
-			// 使用路由组中间件
 			[]rest.Middleware{serverCtx.GreetMiddleware1, serverCtx.GreetMiddleware2},
 			[]rest.Route{
 				{
@@ -24,5 +23,15 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 				},
 			}...,
 		),
+	)
+
+	server.AddRoutes(
+		[]rest.Route{
+			{
+				Method:  http.MethodGet,
+				Path:    "/phone/:Phone",
+				Handler: PhoneHandler(serverCtx),
+			},
+		},
 	)
 }

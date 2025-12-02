@@ -3,6 +3,10 @@
 
 package types
 
+type Demo struct {
+	Phone int `path:"Phone,optional" validate:"xPhone"` // 手机号
+}
+
 type Request struct {
 	Name string `path:"name,options=you|me"`
 }

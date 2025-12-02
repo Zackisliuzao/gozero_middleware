@@ -8,11 +8,21 @@ type Response {
 	Message string `json:"message"`
 }
 
+// 自定义校验的包
+type Demo {
+	Phone int `path:"phone,optional" validate:"xPhone"` // 手机号
+}
+
 @server (
 	middleware: GreetMiddleware1,GreetMiddleware2
 )
 service greet-api {
 	@handler GreetHandler
 	get /from/:name (Request) returns (Response)
+}
+
+service greet-api {
+	@handler PhoneHandler
+	get /phone/:Phone (Demo) returns (Response)
 }
 

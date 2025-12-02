@@ -12,5 +12,6 @@ type Config struct {
 	DB    struct {
 		DataSource string
 	}
-	Cache cache.CacheConf
+	Cache   cache.CacheConf
+	ZhTrans bool `json:"zhTrans,optional,default=true"` // 是否开启中文, 默认中文
 }
