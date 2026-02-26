@@ -4,7 +4,7 @@
 package types
 
 type Demo struct {
-	Phone int `path:"Phone,optional" validate:"xPhone"` // 手机号
+	Phone string `path:"Phone,optional" validate:"xPhone"` // 手机号
 }
 
 type Request struct {

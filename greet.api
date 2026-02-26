@@ -10,7 +10,7 @@ type Response {
 
 // 自定义校验的包
 type Demo {
-	Phone int `path:"phone,optional" validate:"xPhone"` // 手机号
+	Phone string `path:"Phone,optional" validate:"xPhone"` // 手机号
 }
 
 @server (

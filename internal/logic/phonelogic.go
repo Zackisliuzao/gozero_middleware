@@ -5,7 +5,6 @@ package logic
 
 import (
 	"context"
-	"strconv"
 
 	"greet/internal/svc"
 	"greet/internal/types"
@@ -29,6 +28,6 @@ func NewPhoneLogic(ctx context.Context, svcCtx *svc.ServiceContext) *PhoneLogic 
 
 func (l *PhoneLogic) Phone(req *types.Demo) (resp *types.Response, err error) {
 	// todo: add your logic here and delete this line
-	resp = &types.Response{Message: strconv.Itoa(req.Phone)}
+	resp = &types.Response{Message: req.Phone}
 	return
 }
